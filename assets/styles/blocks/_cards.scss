@@ -1,0 +1,142 @@
+.cards {
+
+    background: linear-gradient(258deg, #FFC83E 10.43%, #FF9F47 82.11%);
+
+    &__block {
+        padding: 27px 0 34px;
+        border-top: 1px solid #e6dbdb;
+        border-bottom: 1px solid #e6dbdb;
+    }
+
+    &__block-card {
+        @include desktop {
+            display: flex;
+            align-items: center;
+            gap: 70px;
+        }
+    }
+
+    &__title {
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 21px;
+        color: #FFFFFF;
+        @include tablet {
+            width: 118px;
+        }
+        @include desktop {
+            width: 118px;
+        }
+    }
+
+    &__header {
+        text-align: center;
+    }
+
+    &__block-img {
+        margin-top: 19px;
+        display: flex;
+        justify-content: space-around;
+        @include tablet {
+            margin-top: 0px;
+        }
+    }
+
+
+    &__btn {
+        text-align: center;
+        margin-top: 35px;
+        width: 100%;
+    }
+
+    &__button {
+        padding: 21px 57px;
+        border: 1px solid #FFFFFF;
+        font-weight: 300;
+        font-size: 18px;
+        line-height: 21px;
+        color: #FFFFFF;
+        transition: 1s ease;
+        &:hover {
+            cursor: pointer;
+            background-color: #FF9F47;
+            box-shadow: 10px 5px 5px #703d3d;
+        }
+        @include tablet {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            gap: 5px;
+            padding: 30px 0;
+        }
+        @include desktop {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            gap: 5px;
+            padding: 35px 0;
+        }
+    }
+
+    &__line {
+        border-bottom: 1px solid #FFFFFF;
+        font-weight: 300;
+        font-size: 18px;
+        line-height: 21px;
+        color: #FFFFFF;
+    }
+
+    &__block-text {
+
+    }
+
+    &__header-text {
+        padding: 31px 0 23px;
+    }
+
+    &__block-header {
+        @include tablet {
+            margin-top: 37px;
+            display: flex;
+            align-items: center;
+            gap: 37px;
+            padding: 22px 0;
+            border-top: 1px solid rgba(255, 255, 255, 0.2);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+        }
+    }
+
+    &__header-title {
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 21px;
+        text-transform: uppercase;
+        color: #FFFFFF;
+    }
+
+    &__block-work {
+
+    }
+
+    &__work {
+        margin-bottom: 20px;
+    }
+
+    &__text {
+        font-weight: 300;
+        font-size: 12px;
+        line-height: 14px;
+        color: #FFFFFF;
+    }
+
+    &__sub-work {
+
+    }
+
+    &__sub-text {
+        font-weight: 300;
+        font-size: 12px;
+        line-height: 14px;
+        color: #FFFFFF;
+    }
+}

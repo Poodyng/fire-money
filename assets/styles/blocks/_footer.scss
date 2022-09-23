@@ -1,0 +1,76 @@
+.footer {
+
+    padding: 32px 0;
+    background: linear-gradient(280.77deg, #FFC83E 10.43%, #FF9F47 82.11%);
+
+    &__items {
+        @include desktop {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+    }
+
+    &__block-text {
+        @include tablet {
+            display: flex;
+            align-items: center;
+            gap: 28px;
+            justify-content: center;
+        }
+    }
+
+    &__img {
+        text-align: center;
+    }
+
+    &__text {
+        text-align: center;
+        margin: 21px 0 33px;
+    }
+
+    &__title {
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 21px;
+        color: #FFFFFF;
+    }
+
+    &__block {
+        display: flex;
+        justify-content: space-around;
+        @include tablet {
+            justify-content:center;
+            gap: 36px;
+        }
+    }
+    
+    &__button {
+        padding: 12px 28px;
+        border: 1px solid #FEFEFE;
+        border-radius: 8px;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 19px;
+        text-transform: uppercase;
+        color: #FEFEFE;
+        transition: 1s ease;
+        &:hover {
+            cursor: pointer;
+            color: rgb(248, 151, 6);
+            background-color: #FFFFFF;
+        }
+    }
+
+    &__block-img {
+        display: flex;
+        align-items: center;
+        gap: 17px;
+    }
+
+    &__img-line {
+        padding: 0 11px;
+        border-left: 1px solid #ebe0d3;
+        border-right: 1px solid #ebe0d3;
+    }
+}

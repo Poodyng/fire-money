@@ -1,0 +1,53 @@
+.get {
+
+    &__header {
+        @include desktop {
+            margin-top: 113px;
+        }
+    }
+
+    &__block {
+        text-align: center;
+        padding-top: 38px;
+        @include desktop {
+            display: flex;
+            text-align: start;
+            justify-content: flex-start;
+            gap: 165px;
+            padding-top: 0px;
+        }
+    }
+
+    &__title {
+        font-weight: 600;
+        font-size: 38px;
+        line-height: 40px;
+        color: #45515F;
+        @include tablet {
+            line-height: 45px;
+        }
+    }
+
+    &__text-block {
+        margin: 28px 0;
+    }
+
+    &__sub-title {
+        font-weight: 400;
+        font-size: 22px;
+        line-height: 133.5%;
+        color: #536473;
+        @include tablet {
+            font-size: 27px;
+            max-width: 460px;
+        }
+        @include desktop {
+            max-width: 460px;
+        }
+    }
+
+    &__baner {
+        display: flex;
+        width: 100%;
+    }
+}

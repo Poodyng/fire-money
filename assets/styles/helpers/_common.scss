@@ -1,0 +1,19 @@
+@import './reset';
+@import './mixins';
+@import './fonts';
+
+body {
+    font-family: 'Rubik';
+    font-weight: 400;
+}
+
+.container {
+    padding: 0 10px;
+
+    @include tablet {
+        margin: 0 auto;
+    }
+    @include desktop {
+        padding: 0 220px;
+    }
+}

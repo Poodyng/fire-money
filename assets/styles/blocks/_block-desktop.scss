@@ -1,0 +1,10 @@
+.block-desktop {
+    display: flex;
+    flex-direction: column;
+    @include desktop {
+        display: flex;
+        flex-direction: row;
+        padding-top: 60px;
+        background: linear-gradient(269deg, #FFC83E 10.43%, #FF9F47 82.11%);
+    }
+}

@@ -1,0 +1,75 @@
+.answers {
+
+    background: #F6F9FC;
+    padding: 33px 0 35px;
+
+    &__block {
+
+    }
+
+    &__header {
+        text-align: center;
+    }
+
+    &__title {
+        font-weight: 600;
+        font-size: 38px;
+        line-height: 45px;
+        color: #45515F;
+
+    }
+
+    &__card {
+        display: flex;
+        justify-content: space-between;
+        padding: 21px 14px;
+        margin-top: 30px;
+        background: linear-gradient(268.87deg, #FFC83E -5.09%, #FF7347 51.96%);
+        border-radius: 12px;
+    }
+
+    &__sub-block-text {
+        margin-bottom: 14px;
+    }
+
+    &__word {
+
+    }
+
+    &__text {
+        margin-bottom: 14px;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 19px;
+        color: #FFFFFF;
+    }
+
+    &__sub-text {
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 17px;
+        color: #FFFFFF;
+    }
+
+    &__img {
+
+    }
+
+    &__min-card {
+        display: flex;
+        justify-content: space-between;
+        padding: 25px 18px;
+        background: rgba(255, 255, 255, 0.95);
+        box-shadow: 0px 4px 44px rgba(84, 104, 123, 0.05);
+        backdrop-filter: blur(12px);
+        border-radius: 12px;
+        margin: 4px 0;
+    }
+
+    &__text-sub {
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 19px;
+        color: #45515F;
+    }
+}

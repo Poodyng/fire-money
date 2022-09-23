@@ -1,0 +1,50 @@
+.ways {
+
+    padding: 35px 0 42px;
+
+
+    &__header {
+        text-align: center;
+    }
+
+    &__title {
+        font-weight: 600;
+        font-size: 38px;
+        line-height: 33px;
+        color: #45515F;
+        @include tablet {
+            line-height: 45px;
+        }
+    }
+
+    &__sub-title {
+        margin: 23px 0 30px;
+        font-weight: 300;
+        font-size: 13px;
+        line-height: 145.5%;
+        color: #45515F;
+
+    }
+
+    &__img {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        justify-content: center;
+        @include tablet {
+            gap: 50px;
+        }
+    }
+
+    &__block-img {
+        text-align: center;
+        padding: 21px 15px 17px;
+        border-radius: 17px;
+        background: #F6F9FC;
+    }
+
+    &__btn {
+        padding-top: 38px;
+        text-align: center;
+    }
+}

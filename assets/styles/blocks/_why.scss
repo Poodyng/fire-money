@@ -1,0 +1,148 @@
+.why {
+    padding: 46px 0 30px;
+    background: #F6F9FC;
+
+    &__block {
+
+    }
+
+    &__header {
+        text-align: center;
+        padding-bottom: 39px;
+    }
+
+    &__title {
+        font-weight: 600;
+        font-size: 39px;
+        line-height: 36px;
+        color: #45515F;
+
+    }
+
+    &__block-card {
+        display: flex;
+        gap: 15px;
+        @include desktop {
+            justify-content: space-around;
+        }
+    }
+
+    &__card-too {
+        padding: 31px 16px 41px 23px;
+        border-radius: 22px;
+        background: rgba(255, 255, 255, 0.95);
+        box-shadow: 0px 4px 44px rgba(84, 104, 123, 0.05);
+        display: none;
+        @include tablet {
+            display: block;
+        }
+    }
+
+    &__card-free {
+        padding: 31px 16px 41px 23px;
+        border-radius: 22px;
+        background: rgba(255, 255, 255, 0.95);
+        box-shadow: 0px 4px 44px rgba(84, 104, 123, 0.05);
+        display: none;
+        @include desktop {
+            display: block;
+        }
+    }
+
+    &__card {
+        padding: 31px 16px 41px 23px;
+        border-radius: 22px;
+        background: rgba(255, 255, 255, 0.95);
+        box-shadow: 0px 4px 44px rgba(84, 104, 123, 0.05);
+    }
+
+    &__sub-title {
+        margin: 26px 0 19px;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 21px;
+        color: #45515F;
+    }   
+
+    &__card-block {
+        margin-bottom: 17px;
+        display: flex;
+        gap: 8px;
+    }
+
+    &__title-sub {
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 18px;
+        color: #93A0AB;
+    }
+
+    &__text-block {
+        margin-bottom: 27px;
+        @include desktop {
+            max-width: 322px;
+        }
+    }
+
+    &__text {
+        
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 19px;
+        color: #536473;
+    }
+
+    &__btn {
+        text-align: center;
+        margin: 30px 0 13px;
+    }
+
+    &__sub-btn {
+        text-align: center;
+    }
+
+    &__button {
+        padding: 21px 31px;
+        border-radius: 8px;
+        border: 1px solid #C9D2DD;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 19px;
+        text-transform: uppercase;
+        color: #45515F;
+        &:hover {
+            cursor: pointer;
+            background-color: #b8bec4;
+        }
+        @include tablet {
+            margin-top: 16px;
+        }
+    }
+
+    &__block-bttn {
+        @include tablet {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            justify-content: center;
+        }
+    }
+}
+
+.why-mini {
+	display: inline-block;
+	font-size: 0;
+}
+.why-mini span {
+	padding: 0;
+	font-size: 20px;
+	line-height: 1;
+	color: lightgrey;
+}
+.why-mini > span:before {
+	content: '★';
+}
+.why-mini > span.active {
+	color: gold;
+}
+
