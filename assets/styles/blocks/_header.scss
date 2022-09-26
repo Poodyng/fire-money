@@ -33,11 +33,14 @@
         gap: 20px;
     }   
 
-    &__img {
-        display: flex;
+    &__items-img {
         @include tablet {
             display: none;
         }
+    }
+
+    &__img {
+        display: flex;
     }
 
     &__button {

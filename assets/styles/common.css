@@ -78,7 +78,8 @@ body {
 
 @media screen and (min-width: 1920px) {
   .container {
-    padding: 0 220px;
+    max-width: 1300px;
+    width: 100%;
   }
 }
 
@@ -133,16 +134,16 @@ body {
   gap: 20px;
 }
 
+@media screen and (min-width: 640px) {
+  .header__items-img {
+    display: none;
+  }
+}
+
 .header__img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-}
-
-@media screen and (min-width: 640px) {
-  .header__img {
-    display: none;
-  }
 }
 
 .header__button {
@@ -162,14 +163,7 @@ body {
 }
 
 .hero {
-  background: linear-gradient(280.77deg, #FFC83E 10.43%, #FF9F47 82.11%);
   padding-bottom: 37px;
-}
-
-@media screen and (min-width: 1920px) {
-  .hero {
-    background: linear-gradient(322deg, #FFC83E 10.43%, #FF9F47 82.11%);
-  }
 }
 
 .hero__banner {
@@ -274,7 +268,6 @@ body {
 
 .best-deals {
   padding-bottom: 34px;
-  background: linear-gradient(280.77deg, #FFC83E 10.43%, #FF9F47 82.11%);
 }
 
 .best-deals__block {
@@ -291,18 +284,6 @@ body {
 @media screen and (min-width: 640px) {
   .best-deals__block-img {
     display: block;
-    position: relative;
-  }
-}
-
-.best-deals__img {
-  position: absolute;
-  top: -7.5%;
-}
-
-@media screen and (min-width: 1920px) {
-  .best-deals__img {
-    right: 5%;
   }
 }
 
@@ -865,6 +846,19 @@ body {
   display: flex;
   gap: 30px;
   padding-bottom: 50px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+@media screen and (min-width: 1920px) {
+  .service__block-cards {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
 }
 
 .service__block-text {
@@ -1078,19 +1072,29 @@ body {
 
 .fire__header {
   text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 @media screen and (min-width: 640px) {
   .fire__header {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
   }
 }
 
@@ -1113,6 +1117,14 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+@media screen and (min-width: 1920px) {
+  .fire__block-room {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
 }
 
 .fire__sub-title {
@@ -1142,6 +1154,14 @@ body {
   }
 }
 
+@media screen and (min-width: 1920px) {
+  .fire__block-gmail {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+}
+
 .fire__text {
   font-weight: 400;
   font-size: 13px;
@@ -1159,6 +1179,10 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  width: 100%;
+  -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+          order: 1;
 }
 
 @media screen and (min-width: 640px) {
@@ -1166,6 +1190,16 @@ body {
     -webkit-box-pack: space-evenly;
         -ms-flex-pack: space-evenly;
             justify-content: space-evenly;
+  }
+}
+
+@media screen and (min-width: 1920px) {
+  .fire__info {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: initial;
+    gap: 25px;
   }
 }
 
@@ -1475,6 +1509,7 @@ body {
 }
 
 .block-desktop {
+  background: linear-gradient(269deg, #FFC83E 10.43%, #FF9F47 82.11%);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1494,7 +1529,14 @@ body {
         -ms-flex-direction: row;
             flex-direction: row;
     padding-top: 60px;
-    background: linear-gradient(269deg, #FFC83E 10.43%, #FF9F47 82.11%);
+  }
+}
+
+@media screen and (min-width: 1920px) {
+  .block-desktop .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
   }
 }
 /*# sourceMappingURL=common.css.map */

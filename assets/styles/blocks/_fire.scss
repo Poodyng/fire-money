@@ -9,10 +9,13 @@
 
     &__header {
         text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
         @include tablet {
-            display: flex;
-            align-items: center;
             justify-content: space-between;
+            flex-wrap: wrap;
+            flex-direction: row;
         }
     }
 
@@ -29,6 +32,9 @@
         gap: 10px;
         align-items: center;
         justify-content: center;
+        @include desktop {
+            order: 2;
+        }
     }
 
     &__sub-title {
@@ -48,6 +54,9 @@
         @include tablet {
             padding-bottom: 0px;
         }
+        @include desktop {
+            order: 1;
+        }
     }
 
     &__text {
@@ -63,8 +72,15 @@
         border-bottom: 1px solid rgba(255, 255, 255, 0.2);
         display: flex;
         justify-content: space-between;
+        width: 100%;
+        order: 1;
         @include tablet {
             justify-content: space-evenly;
+        }
+        @include desktop {
+            display: flex;
+            width: initial;
+            gap: 25px;
         }
     }
 

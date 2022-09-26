@@ -1,11 +1,6 @@
 .hero {
 
-    background: linear-gradient(280.77deg, #FFC83E 10.43%, #FF9F47 82.11%);
     padding-bottom: 37px;
-    @include desktop {
-        background: linear-gradient(322deg, #FFC83E 10.43%, #FF9F47 82.11%);
-    }
-
 
     &__banner {
         margin-bottom: 24px;

@@ -1,7 +1,6 @@
 .best-deals {
 
     padding-bottom: 34px;
-    background: linear-gradient(280.77deg, #FFC83E 10.43%, #FF9F47 82.11%);
 
     &__block {
         display: flex;
@@ -12,16 +11,11 @@
         z-index: 1;
         @include tablet {
             display: block;
-            position: relative;
         }
     }
 
     &__img {
-        position: absolute;
-        top: -7.5%;
-        @include desktop {
-            right: 5%;
-        }
+
     }
 
     &__card {
